@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" Bounds="0,0,450.793333333333,34" ErrorLevel="Error" ErrorMessage="Ошибка сборки проекта: &quot;D:\FIOT\Курсові роботи\ОП ІІІ семестр\IP54_Chyzh\Debug\IP54_Chyzh.exe&quot;, дополнительные сведения см. в списке ошибок." FilePath="$(a377013a-8640-4740-9958-4c03f274659e.OutputPath)" Label="D:\FIOT\Курсові роботи\ОП ІІІ семестр\IP54_Chyzh\Debug\IP54_Chyzh.exe" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="DataVirtualized" Label="Виртуализированные данные" Description="При значении true граф может содержать узлы и связи, которые представляют данные для виртуализированных узлов и связей (то есть которые не были фактически созданы в графе)." DataType="System.Boolean" />
+    <Property Id="ErrorLevel" Label="Уровень ошибки" Description="Используется для связи уровня ошибки с узлом или связью в графе" Group="Анализ" DataType="Microsoft.VisualStudio.Progression.ErrorLevel" />
+    <Property Id="ErrorMessage" Label="Ошибка" Description="Ошибка" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilePath" Label="Путь файла" Description="Путь файла" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Видимость" Description="Определяет, является ли видимым узел в графе" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Сборка" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(a377013a-8640-4740-9958-4c03f274659e.OutputPathUri)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Текущий узел стека вызовов" ValueLabel="Да">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Запись внешнего стека вызовов" ValueLabel="Да">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Ошибка" ValueLabel="Уровень ошибки">
+      <Condition Expression="HasValue('ErrorLevel')" />
+      <Setter Property="Icon" Value="Node.Error" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="a377013a-8640-4740-9958-4c03f274659e.OutputPath" Value="D:\FIOT\Курсові роботи\ОП ІІІ семестр\IP54_Chyzh\Debug\IP54_Chyzh.exe" />
+    <Path Id="a377013a-8640-4740-9958-4c03f274659e.OutputPathUri" Value="file:///D:/FIOT/Курсові роботи/ОП ІІІ семестр/IP54_Chyzh/Debug/IP54_Chyzh.exe" />
+  </Paths>
+</DirectedGraph>
