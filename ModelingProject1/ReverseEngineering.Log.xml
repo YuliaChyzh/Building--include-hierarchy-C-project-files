@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Журнал создания кода/преобразования текста">
+  <MessageClass Name="Message" Label="Сообщение" Option="Показывать информационные сообщения" />
+  <MessageClass Name="Warning" Label="Предупреждение" Option="Показывать предупреждения" />
+  <MessageClass Name="Error" Label="Ошибка" Option="Показывать ошибки" />
+  <MessageClass Name="Property" Label="Свойство" Option="Показывать метаданные" />
+  <MessageClass Name="Diagnostic" Label="Сообщение" Option="Показывать диагностические сообщения" />
+  <Message Timestamp="2016-12-11T20:13:06" Importance="High" Text="Реконструирование запущено." />
+  <Error Timestamp="2016-12-11T20:13:06" Importance="High" Text="Реконструирование типов C++ не поддерживается. В ходе этого процесса некоторые узлы DGML будут пропущены. Подробные сведения см. в предупреждениях." />
+  <Warning Timestamp="2016-12-11T20:13:07" Importance="Medium" Text="Реконструирование типа C++ &quot;ArrowShare&quot; пропущено." />
+  <Message Timestamp="2016-12-11T20:13:07" Importance="High" Text="Полностью реконструировано (0) типов." />
+  <Message Timestamp="2016-12-11T20:13:07" Importance="High" Text="Операция реконструирования завершена; ошибок: (1), предупреждений: (1)." />
+</Log>
